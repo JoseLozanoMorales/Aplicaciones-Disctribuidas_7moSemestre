@@ -1,4 +1,4 @@
-package src.main.java.ec.edu.uteq.distribuidas.udp;
+package ec.edu.uteq.distribuidas.udp;
 
 import java.net.*;
 import java.util.Scanner;
