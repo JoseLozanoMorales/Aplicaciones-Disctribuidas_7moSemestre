@@ -1,4 +1,4 @@
-package ec.edu.uteq.distribuidas.tcp;
+package src.main.java.ec.edu.uteq.distribuidas.tcp;
 
 import java.io.*;
 import java.net.*;

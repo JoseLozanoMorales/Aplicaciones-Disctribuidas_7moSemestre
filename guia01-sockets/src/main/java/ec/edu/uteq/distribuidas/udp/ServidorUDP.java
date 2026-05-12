@@ -1,4 +1,4 @@
-package ec.edu.uteq.distribuidas.udp;
+package src.main.java.ec.edu.uteq.distribuidas.udp;
 
 import java.net.*;
 import java.time.LocalDateTime;
