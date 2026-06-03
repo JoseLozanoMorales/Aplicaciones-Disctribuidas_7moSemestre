@@ -2,9 +2,6 @@ package src.ec.edu.uteq.distribuidas.lamport;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-/**
- * Implementacion de Reloj de Lamport ( thread - safe mediante AtomicInteger ).* Sigue las tres reglas de Lamport (1978) .
- */
 public class LamportClock {
 
     private final AtomicInteger contador = new AtomicInteger
@@ -15,27 +12,18 @@ public class LamportClock {
         this.nombreProceso = nombre;
     }
 
-    /**
-     * Regla 1: incrementar antes de evento interno .
-     */
     public int eventoInterno(String descripcion) {
         int t = contador.incrementAndGet();
         System.out.printf("[ %s] EVENTO INTERNO %-15s C= %d %n", nombreProceso, descripcion, t);
         return t;
     }
 
-    /**
-     * Regla 2: incrementar y adjuntar marca al enviar .
-     */
     public int enviar(String destino, String mensaje) {
         int t = contador.incrementAndGet();
         System.out.printf("[ %s] ENVIO -> %-8s msg=’ %-20s’ C = %d %n", nombreProceso, destino, mensaje, t);
         return t; // esta marca viaja con el mensaje
     }
 
-    /**
-     * Regla 3: max(local , recibido ) + 1 al recibir .
-     */
     public int recibir(String origen, int marcaMensaje,
                        String mensaje) {
         int nuevo;

@@ -3,10 +3,6 @@ package src.ec.edu.uteq.distribuidas.bully;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.*;
 
-/**
- * Simulacion del Algoritmo Bully para eleccion de lider .
- * Los procesos se comunican mediante BlockingQueue ( simula mensajes en red).
- */
 public class Bully {
 
     enum TipoMensaje {ELECTION, OK, COORDINATOR}
