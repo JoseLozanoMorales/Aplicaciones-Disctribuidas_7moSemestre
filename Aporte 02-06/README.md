@@ -1,3 +1,10 @@
+--Compilar--
+
+Desde la carpeta Aporte 02-06, ejecutar:
+
+mvn clean compile
+
+----------------------------------------------------------------------------------------------
 --Ejecutar--
 
 Para probar el sistema completo, ejecutar las siguientes clases desde IntelliJ IDEA:
