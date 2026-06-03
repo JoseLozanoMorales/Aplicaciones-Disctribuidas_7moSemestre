@@ -33,7 +33,8 @@ public class ClienteTCP {
 
         String host = "localhost";
 
-        System.out.println("Conectado a " + host + ":" + puerto);
+        System.out.println("Nodo seleccionado: N" + opcion + " en " + host + ": " + puerto);
+        System.out.println("La conexión TCP se intentará al enviar cada operación.");
         System.out.println("Formato: TOKEN123|Operacion");
         System.out.println("Ejemplo: TOKEN123|Registrar entrada de paquete 001");
         System.out.println("Escriba SALIR para cerrar el cliente");
