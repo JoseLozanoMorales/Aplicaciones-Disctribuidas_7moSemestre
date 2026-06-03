@@ -1,3 +1,19 @@
+--Como abrir el repositorio--
+
+Dentro del repositorio, el proyecto se encuentra en la carpeta:
+
+Aporte 02-06
+
+Para abrirlo:
+
+1. Clonar el repositorio.
+2. Abrir IntelliJ IDEA.
+3. Seleccionar Open.
+4. Elegir la carpeta Aporte 02-06.
+5. Esperar a que IntelliJ detecte el proyecto Maven.
+6. Verificar que el SDK configurado sea Java 21.
+
+----------------------------------------------------------------------------------------------
 --Compilar--
 
 Desde la carpeta Aporte 02-06, ejecutar:
